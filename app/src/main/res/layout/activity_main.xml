@@ -8,6 +8,23 @@
     android:fitsSystemWindows="true"
     tools:openDrawer="start">
 
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/toDetailsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="80dp"
+            android:onClick="toDetails"
+            android:text="@string/detailsButton"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="Details" />
+    </android.support.constraint.ConstraintLayout>
+
     <include
         layout="@layout/app_bar_main"
         android:layout_width="match_parent"
